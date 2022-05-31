@@ -26,4 +26,11 @@ function playRound(playerSelection, comupterSelection){
   }
 }
 
-console.log(playRound("Rock", computerPlay()));
+function game(rounds) {
+  for (let i = 0; i < rounds; i++) {
+    const playerSelection = prompt("What are you going to play?");
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+  }
+}
+game(5);
