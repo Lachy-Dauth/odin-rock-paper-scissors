@@ -1,4 +1,5 @@
 const opts = ["Rock", "Paper", "Scissors"];
+const validInputs = ["r", "p", "s"]
 
 function computerPlay(){
   return opts[Math.floor(Math.random()*opts.length)];
