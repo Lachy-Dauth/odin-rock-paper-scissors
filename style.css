@@ -4,7 +4,7 @@
 
 .holder {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 1rem;
 }
 #winner {
@@ -13,5 +13,43 @@
   transform: rotate(4deg);
 }
 body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   text-align: center;
+  background: rgb(248,0,255);
+  background: linear-gradient(318deg, rgba(248,0,255,1) 0%, rgba(0,212,255,1) 68%, rgba(14,255,0,1) 100%);
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  min-width: 100%;
+}
+
+.btn {
+  background: rgb(248,0,255);
+  background: linear-gradient(318deg, rgb(247, 0, 255) 0%, rgb(0, 213, 255) 100%);
+  border: 2px solid black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: rgb(248,0,255);
+  background: linear-gradient(318deg, rgb(123, 0, 128) 0%, rgb(0, 109, 131) 100%);
+}
+
+.btn:active {
+  background: rgb(248,0,255);
+  background: linear-gradient(318deg, rgb(217, 0, 224) 0%, rgb(0, 197, 236) 100%);
+}
+
+main {
+  height: auto;
+  max-width: 1000px;
+  width: 80%;
 }
