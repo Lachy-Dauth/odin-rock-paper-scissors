@@ -1,4 +1,5 @@
 const opts = ["Rock", "Paper", "Scissors"];
+const validInputs = ["r", "p", "s"]
 
 function computerPlay(){
   return opts[Math.floor(Math.random()*opts.length)];
@@ -33,4 +34,4 @@ function game(rounds) {
     console.log(playRound(playerSelection, computerSelection));
   }
 }
-game(5);
+
