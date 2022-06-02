@@ -1,0 +1,17 @@
+:root {
+  font-family: sans-serif;
+}
+
+.holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#winner {
+  margin-top: -5rem;
+  font-size: 3rem;
+  transform: rotate(4deg);
+}
+body {
+  text-align: center;
+}
