@@ -1,6 +1,16 @@
 const opts = ["Rock", "Paper", "Scissors"];
 const validInputs = ["r", "p", "s"]
 
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", e => {
+    const playerSelection = e.target.id;
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+  })
+})
+
 function computerPlay(){
   return opts[Math.floor(Math.random()*opts.length)];
 }
